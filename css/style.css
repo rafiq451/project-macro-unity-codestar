@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
+=======
+/* my font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+>>>>>>> 6b085bc524b3d7f44b021eab757a4ff671d08878
 
 :root {
   --secondary-gray-800: #1f2937;
 }
 
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +18,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
+=======
+/* body */
+body {
+  font-family: 'Roboto', sans-serif;
+>>>>>>> 6b085bc524b3d7f44b021eab757a4ff671d08878
 }
 
 /* navbar */
