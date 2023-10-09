@@ -28,6 +28,53 @@ body {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* kursus detail */
+.star {
+  position: absolute;
+  gap: 80px;
+  display: flex;
+  transform: rotateY(180deg);
+}
+
+.star input {
+  display: none;
+}
+
+.star label {
+  display: block;
+  cursor: pointer;
+}
+
+.star label:before {
+  content: "\f005";
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 24px;
+  color: #010101;
+}
+
+.star label:after {
+  content: "\f005";
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 24px;
+  color: gold;
+  top: 0;
+  opacity: 0;
+}
+
+.star label:hover:after,
+.star label:hover ~ label:after,
+.star input:checked ~ label:after {
+  opacity: 1;
+}
+
+.number-list {
+  margin-inline: 1rem;
+}
+
 /* footer */
 footer {
   background-color: var(--secondary-gray-800);
