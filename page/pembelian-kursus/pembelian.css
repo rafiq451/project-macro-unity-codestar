@@ -1,0 +1,110 @@
+/* my font */
+
+:root {
+  --primary-yellow: #ffc727;
+  --secondary-gray-800: #1f2937;
+  --secondary-slate-600: #475569;
+  --secondary-slate-50: #f8fafc;
+}
+
+/* body */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--secondary-gray-800);
+}
+
+/* navbar */
+.navbar-brand {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-button a.btn {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*  pembelian */
+
+.image-course2,
+.image-course1 {
+  width: 100%;
+}
+.image-course2 img,
+.image-course1 img {
+  width: 100%;
+}
+
+.judul-desk-button {
+  padding: 3px;
+  width: 20%;
+  background-color: var(--primary-yellow);
+  color: var(--secondary-slate-50);
+  transition: all 500ms;
+}
+.judul-desk-button:hover {
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+.judul-desk-button a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.text-sil,
+.text-req {
+  font-size: 0.8rem;
+}
+
+.desktop1 {
+  display: block;
+}
+
+.desktop2 {
+  display: none;
+}
+
+/* footer */
+footer {
+  background-color: var(--secondary-gray-800);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul.border-bottom {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* footer */
+  ul.border-bottom {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .text-sil,
+  .text-req {
+    font-size: 1rem;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,133 @@
+/* my font */
+
+:root {
+  --primary-yellow: #ffc727;
+  --secondary-gray-800: #1f2937;
+  --secondary-slate-600: #475569;
+  --secondary-slate-50: #f8fafc;
+}
+
+/* body */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+.navbar-brand {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-button a.btn {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* katalog course */
+
+.title h2 {
+  color: var(--primary-yellow);
+}
+.title h1 {
+  color: var(--secondary-gray-800);
+}
+.title .line {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 10%;
+  height: 2px;
+  background-color: var(--primary-yellow);
+}
+
+.card .crd-img {
+  width: 100%;
+}
+.card img {
+  max-width: 100%;
+}
+
+.card-body a {
+  text-decoration: none;
+  width: 100%;
+  color: var(--secondary-slate-50);
+}
+.card-body p {
+  color: var(--secondary-slate-600);
+}
+
+.selengkapnya {
+  text-decoration: none;
+  background-color: var(--primary-yellow);
+  width: 50%;
+  padding: 5px;
+  transition: all 500ms;
+}
+
+.crd-course {
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(26, 115, 232, 0.5);
+}
+
+/* footer */
+footer {
+  background-color: var(--secondary-gray-800);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul.border-bottom {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* footer */
+  ul.border-bottom {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* course */
+  .crd-course {
+    width: 50%;
+  }
+
+  /*  */
+  .selengkapnya {
+    width: 90%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .crd-course {
+    width: 40%;
+  }
+
+  .selengkapnya {
+    width: 40%;
+  }
+  .selengkapnya:hover {
+    width: 45%;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

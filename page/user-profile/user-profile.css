@@ -1,0 +1,190 @@
+/* my font */
+
+:root {
+  --primary-yellow: #ffc727;
+  --secondary-gray-800: #1f2937;
+  --secondary-slate-600: #475569;
+  --secondary-slate-50: #f8fafc;
+}
+
+/* body */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+.navbar-brand {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-button a.btn {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* jumbotron */
+#jumbotron .bg-img {
+  background-image: url('../../assets/img/user-profile/jumbotron.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+#jumbotron .bg-img .title {
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* content */
+
+.user-gambar {
+  padding-top: 2rem;
+  width: 100%;
+  height: 50%;
+}
+.user-gambar .img {
+  width: 40%;
+  overflow: hidden;
+}
+.user-gambar .img img {
+  width: 100%;
+}
+
+.user-gambar .intro {
+  padding: 2px;
+  width: 100%;
+}
+
+.intro-title h2 {
+  color: var(--primary-yellow);
+}
+.intro-title p {
+  color: var(--secondary-slate-600);
+}
+
+.intro-body {
+  width: 90%;
+  margin: 0 auto;
+}
+.intro-body p {
+  color: var(--secondary-slate-600);
+}
+
+.card-course {
+  width: 100%;
+}
+
+/*  */
+
+.status-title,
+.conten .border-keanggotaan {
+  width: 95%;
+}
+
+.button-status {
+  text-decoration: none;
+  background-color: var(--primary-yellow);
+  margin: 0 auto;
+  width: 30%;
+  padding: 3px;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.footer-button a,
+.button-status a {
+  text-decoration: none;
+  color: var(--secondary-slate-50);
+  width: 100%;
+}
+
+.border-kursus {
+  width: 95%;
+}
+
+.kursus-title {
+  width: 100%;
+}
+
+.krs-title {
+  width: 70%;
+}
+.krs-nilai {
+  width: 20%;
+}
+.kursus-nilai {
+  width: 40px;
+  height: 40px;
+}
+.footer-button {
+  text-decoration: none;
+  background-color: var(--primary-yellow);
+  margin: 0 auto;
+  width: 60%;
+  padding: 3px;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+footer {
+  background-color: var(--secondary-gray-800);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul.border-bottom {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #jumbotron .bg-img {
+    height: 500px;
+  }
+  #jumbotron .bg-img .title {
+    height: 500px;
+  }
+  /* footer */
+  ul.border-bottom {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*  */
+  .status-title,
+  .conten .border-keanggotaan {
+    width: 80%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .user-gambar {
+    width: 40%;
+  }
+
+  .card-course {
+    width: 60%;
+  }
+  .border-kursus {
+    width: 60%;
+  }
+  .button-status {
+    width: 20%;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
