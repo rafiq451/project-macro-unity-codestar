@@ -1,0 +1,141 @@
+/* my font */
+
+:root {
+  --primary-yellow: #ffc727;
+  --secondary-gray-800: #1f2937;
+  --secondary-slate-600: #475569;
+  --secondary-slate-50: #f8fafc;
+}
+
+/* body */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+.navbar-brand {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-button a.btn {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* kursus */
+
+.card .card-img {
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.crd-paket a {
+  text-decoration: none;
+  color: var(--secondary-gray-800);
+}
+
+.card-body .pelajaran {
+  font-size: 0.8rem;
+  color: var(--secondary-slate-600);
+}
+
+.container .crd-course {
+  width: 100%;
+}
+
+.rating-star {
+  width: 80%;
+}
+.rating-angka {
+  width: 20%;
+}
+
+/* testimoni */
+#testimoni {
+  background-color: var(--secondary-slate-50);
+}
+
+.container .testi-img {
+  width: 30%;
+  overflow: hidden;
+}
+.container .testi-img img {
+  max-width: 100%;
+}
+
+.title h2 {
+  color: var(--primary-yellow);
+}
+.title h1 {
+  color: var(--secondary-gray-800);
+}
+.title .line {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 10%;
+  height: 2px;
+  background-color: var(--primary-yellow);
+}
+
+.testi-rating {
+  width: 80%;
+}
+.testi-rating span {
+  color: var(--primary-yellow);
+}
+
+.testi-deskripsi h1 {
+  color: var(--secondary-gray-800);
+}
+.testi-deskripsi p {
+  color: var(--secondary-slate-600);
+}
+/* footer */
+footer {
+  background-color: var(--secondary-gray-800);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul.border-bottom {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container .crd-course {
+    width: 18rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* footer */
+  ul.border-bottom {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* course */
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

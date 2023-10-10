@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forum diskusi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Viga&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="forum-diskusi.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- ckeditor -->
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <div class="container p-2">
+        <div class="brand">
+          <a class="navbar-brand fs-2" href="#">Codestar</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-2" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-medium" href="#">Kursus</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-medium" href="#">Testimoni</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-medium" href="#">FAQ</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-medium" href="#">Membership</a>
+            </li>
+          </ul>
+          <div class="navbar-user dropdown p-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ridho Fauzi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Another </a></li>
+              <li><a class="dropdown-item" href="#">Something</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- interaktif start -->
+    <section id="interaktif">
+      <div class="container py-5">
+        <div class="title py-3 border-bottom border-2">
+          <h1 class="fw-bold fs-1 text-center text-md-start">Forum Diskusi</h1>
+        </div>
+        <div class="conten d-flex flex-wrap flex-lg-nowrap my-5">
+          <div class="conten-user col-md-12 col-lg-4 border">
+            <div class="user-title text-center p-1 border bg-warning">
+              <h2 class="fs-4 text-light">Diskusi</h2>
+            </div>
+            <div class="user-cont d-flex border">
+              <div class="cont-image">
+                <div class="cont-img rounded-pill mt-2 mt-lg-1">
+                  <img src="../../assets/img/user-profile/gumilang.jpg" alt="" />
+                </div>
+              </div>
+              <div class="cont-name mx-1 align-self-end align-self-md-center align-self-lg-start align-self-xl-start align-self-xxl-end">
+                <h3 class="mt-2">Budi Siregar</h3>
+                <p>Apa bahasa pemrograman yang...</p>
+              </div>
+              <div class="cont-waktu mx-lg-1">
+                <span>10:40</span>
+              </div>
+            </div>
+          </div>
+          <div class="conten-diskusi mx-0 mx-lg-2 my-2 col-md-12 col-lg-8 border p-3">
+            <div class="diskusi-title mb-2 d-flex justify-content-center align-items-center p-1 border bg-warning">
+              <h2 class="fs-6 text-light my-1">Topik Diskusi @Budisiregar</h2>
+            </div>
+            <div class="border mb-2">
+              <div class="header-disk border p-2 d-flex align-items-start align-items-md-center">
+                <div class="disk-user d-flex align-items-center">
+                  <div class="user-img rounded-pill mt-2 mt-lg-0">
+                    <img src="../../assets/img/user-profile/gumilang.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="disk-topik mx-2">
+                  <h2 class="fs-5 mt-2">Apa bahasa pemrograman terbaik untuk pemula?</h2>
+                  <p>by <span class="topik-nama text-warning">Budi siregar</span>- Jum’at, 29 September 2023</p>
+                </div>
+              </div>
+              <div class="body-disk p-2">
+                <p class="">Aku mau minta saran dong. Menurut kalian apa sih bahasa pemrograman yang cocok untuk pemula?</p>
+              </div>
+              <div class="footer-disk border p-2 d-flex">
+                <button class="btn btn-warning ms-auto text-light">Balas</button>
+              </div>
+            </div>
+            <form action="">
+              <div class="form-floating mb-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px;"></textarea>
+                <label class="text-dark-emphasis" for="floatingTextarea2">Tulis Balasan Anda...</label>
+              </div>
+              <button class="btn btn-warning ms-auto text-light">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- interaktoif end -->
+
+    <!-- footer start -->
+    <footer class="text-light text-center py-3">
+      <div class="container">
+        <div class="content p-2">
+          <div class="footer-menu mb-2">
+            <ul class="d-flex p-2 justify-content-center flex-column flex-md-row border-bottom border-light">
+              <li class="nav-item my-4 mx-md-4 my-md-0">
+                <a class="nav-link fw-medium" href="#">Tentang Kami</a>
+              </li>
+              <li class="nav-item my-4 mx-md-4 my-md-0">
+                <a class="nav-link fw-medium" href="#">Kursus</a>
+              </li>
+              <li class="nav-item my-4 mx-md-4 my-md-0">
+                <a class="nav-link fw-medium" href="#">FAQ</a>
+              </li>
+              <li class="nav-item my-4 mx-md-4 my-md-0">
+                <a class="nav-link fw-medium" href="#">Kontak</a>
+              </li>
+            </ul>
+          </div>
+          <p>&copy; 2023 Codestar</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

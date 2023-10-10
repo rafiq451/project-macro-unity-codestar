@@ -1,0 +1,150 @@
+/* my font */
+
+:root {
+  --primary-yellow: #ffc727;
+  --secondary-gray-800: #1f2937;
+  --secondary-slate-600: #475569;
+  --secondary-slate-50: #f8fafc;
+}
+
+/* body */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+.navbar-brand {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-button a.btn {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*  diskusi */
+
+.title h1 {
+  color: var(--secondary-gray-800);
+}
+.conten-user {
+  height: 400px;
+}
+.user-title {
+  width: 100%;
+}
+
+.user-cont {
+  padding: 1rem;
+}
+
+.cont-name {
+  width: 70%;
+}
+.cont-name h3 {
+  font-size: 1.3rem;
+}
+.cont-waktu {
+  width: 10%;
+}
+.user-cont,
+.footer-disk,
+.header-disk {
+  background-color: var(--secondary-slate-50);
+}
+.cont-image {
+  width: 20%;
+}
+.cont-img {
+  overflow: hidden;
+  width: 100%;
+}
+.cont-img img {
+  width: 100%;
+}
+
+.user-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.user-img img {
+  width: 100%;
+}
+
+.disk-user {
+  width: 20%;
+}
+
+.disk-topik {
+  width: 85%;
+}
+
+/*  */
+
+.diskusi-title {
+  width: 100%;
+}
+
+.form-floating label,
+.body-disk p {
+  font-size: 0.9rem;
+}
+
+/* footer */
+footer {
+  background-color: var(--secondary-gray-800);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul.border-bottom {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .cont-name h3 {
+    font-size: 2rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* footer */
+  ul.border-bottom {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cont-name h3 {
+    font-size: 1.5rem;
+  }
+
+  .diskusi-title {
+    width: 40%;
+  }
+  .disk-user {
+    width: 10%;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .diskusi-title {
+    width: 30%;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
