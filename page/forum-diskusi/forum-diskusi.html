@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tuker Poin</title>
+    <title>Forum diskusi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Viga&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- my css -->
-    <link rel="stylesheet" href="tukar-poin.css" />
+    <link rel="stylesheet" href="forum-diskusi.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- ckeditor -->
   </head>
   <body>
     <!-- navbar start -->
@@ -52,77 +53,74 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- tukar poin start -->
-    <section id="tukar-poin">
+    <!-- interaktif start -->
+    <section id="interaktif">
       <div class="container py-5">
-        <div class="title py-5 text-center">
-          <h1 class="fw-bold">Penukaran Poin</h1>
-          <p>Tukarkan point Anda menjadi sesuatu yang membuat Anda bahagia.</p>
+        <div class="title py-3 border-bottom border-2">
+          <h1 class="fw-bold fs-1 text-center text-md-start">Forum Diskusi</h1>
         </div>
-        <div class="content">
-          <div class="d-flex justify-content-center flex-wrap flex-xl-nowrap">
-            <div class="card mx-2 my-2 crd-course">
-              <div class="crd-img">
-                <img src="../../assets/img/tukar-poin/course.jpg" alt="..." />
+        <div class="conten d-flex flex-wrap flex-lg-nowrap my-5">
+          <div class="conten-user col-md-12 col-lg-4 border">
+            <div class="user-title text-center p-1 border bg-warning">
+              <h2 class="fs-4 text-light">Diskusi</h2>
+            </div>
+            <div class="user-cont d-flex border">
+              <div class="cont-image">
+                <div class="cont-img rounded-pill mt-2 mt-lg-1">
+                  <img src="../../assets/img/user-profile/gumilang.jpg" alt="" />
+                </div>
               </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div class="crd-title">
-                    <h1 class="fs-3">Free Course</h1>
-                  </div>
-                  <div class="crd-point">
-                    <p class="p-1 border border-primary text-primary">10.000 Point</p>
-                  </div>
-                </div>
-                <p class="fw-semibold text-secondary">1 kursus gratis, bebas memilih jenis kursus.</p>
-                <div class="crd-tukar d-flex justify-content-center rounded-pill">
-                  <a href="" class="text-center fw-semibold">Tukar</a>
-                </div>
+              <div class="cont-name mx-1 align-self-end align-self-md-center align-self-lg-start align-self-xl-start align-self-xxl-end">
+                <h3 class="mt-2">Budi Siregar</h3>
+                <p>Apa bahasa pemrograman yang...</p>
+              </div>
+              <div class="cont-waktu mx-lg-1">
+                <span>10:40</span>
               </div>
             </div>
-            <div class="card mx-2 my-2 crd-course">
-              <div class="crd-img">
-                <img src="../../assets/img/tukar-poin/sale.jpg" alt="..." />
+          </div>
+          <div class="conten-diskusi mx-0 mx-lg-2 my-2 col-md-12 col-lg-8 border p-3">
+            <div class="d-flex justify-content-between">
+              <div class="diskusi-title mb-2 d-flex justify-content-center align-items-center p-1 border bg-warning">
+                <h2 class="fs-6 text-light my-1">Topik Diskusi @Budisiregar</h2>
               </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div class="crd-title">
-                    <h1 class="fs-4">Diskon Khusus</h1>
-                  </div>
-                  <div class="crd-point">
-                    <p class="p-1 border border-primary text-primary">12.000 Point</p>
-                  </div>
-                </div>
-                <p class="fw-semibold text-secondary">Diskon besar khusus pengguna membership.</p>
-                <div class="crd-tukar d-flex justify-content-center rounded-pill">
-                  <a href="" class="text-center fw-semibold">Tukar</a>
-                </div>
+              <div class="add-topic mb-2 d-flex justify-content-center align-items-center p-1 border bg-warning">
+                <span
+                  ><a href="../add-topik/add-topik.html" class="text-light my-1">Tambah Topik <span></span></a
+                ></span>
               </div>
             </div>
-            <div class="card mx-2 my-2 crd-course">
-              <div class="crd-img">
-                <img src="../../assets/img/tukar-poin/baju.jpg" alt="..." />
+            <div class="border mb-2">
+              <div class="header-disk border p-2 d-flex align-items-start align-items-md-center">
+                <div class="disk-user d-flex align-items-center">
+                  <div class="user-img rounded-pill mt-2 mt-lg-0">
+                    <img src="../../assets/img/user-profile/gumilang.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="disk-topik mx-2">
+                  <h2 class="fs-5 mt-2">Apa bahasa pemrograman terbaik untuk pemula?</h2>
+                  <p>by <span class="topik-nama text-warning">Budi siregar</span>- Jum’at, 29 September 2023</p>
+                </div>
               </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div class="crd-title">
-                    <h1 class="fs-4">Hadiah Barang</h1>
-                  </div>
-                  <div class="crd-point">
-                    <p class="p-1 border border-primary text-primary">15.000 Point</p>
-                  </div>
-                </div>
-                <p class="fw-semibold text-secondary">Pilih 1 buah (Kaos/Tumbler/Mug/Tas/Topi) .</p>
-                <div class="crd-tukar d-flex justify-content-center rounded-pill">
-                  <a href="" class="text-center fw-semibold">Tukar</a>
-                </div>
+              <div class="body-disk p-2">
+                <p class="">Aku mau minta saran dong. Menurut kalian apa sih bahasa pemrograman yang cocok untuk pemula?</p>
+              </div>
+              <div class="footer-disk border p-2 d-flex">
+                <button class="btn btn-warning ms-auto text-light">Balas</button>
               </div>
             </div>
+            <form action="">
+              <div class="form-floating mb-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px;"></textarea>
+                <label class="text-dark-emphasis" for="floatingTextarea2">Tulis Balasan Anda...</label>
+              </div>
+              <button class="btn btn-warning ms-auto text-light">Kirim Pesan</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- tukar poin end -->
+    <!-- interaktoif end -->
 
     <!-- footer start -->
     <footer class="text-light text-center py-3">

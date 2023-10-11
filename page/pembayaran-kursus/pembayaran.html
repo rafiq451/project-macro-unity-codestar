@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tuker Poin</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Viga&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Pembayaran</title>
     <!-- my css -->
-    <link rel="stylesheet" href="tukar-poin.css" />
+    <link rel="stylesheet" href="pembayaran.css" />
+    <link rel="stylesheet" href="style/pembayaran.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   </head>
-  <body>
+
+  <body style="color: #1e293b;">
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
       <div class="container p-2">
@@ -52,78 +50,90 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- tukar poin start -->
-    <section id="tukar-poin">
-      <div class="container py-5">
-        <div class="title py-5 text-center">
-          <h1 class="fw-bold">Penukaran Poin</h1>
-          <p>Tukarkan point Anda menjadi sesuatu yang membuat Anda bahagia.</p>
+    <!-- main start -->
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="main-item-container col-lg-8 col-12">
+          <table class="detail-table table table-borderless text-center">
+            <tr class="border-bottom">
+              <th>
+                <h4>Tanggal</h4>
+              </th>
+              <th>
+                <h4>Diskon</h4>
+              </th>
+              <th>
+                <h4>Total</h4>
+              </th>
+            </tr>
+            <tr>
+              <td style="width: min-content;">
+                30 September 2023
+              </td>
+              <td>
+                <p>0%</p>
+              </td>
+              <td>
+                <p>Rp. 100.000</p>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="content">
-          <div class="d-flex justify-content-center flex-wrap flex-xl-nowrap">
-            <div class="card mx-2 my-2 crd-course">
-              <div class="crd-img">
-                <img src="../../assets/img/tukar-poin/course.jpg" alt="..." />
+        <div class="wrapper d-flex mt-5 flex-column flex-md-row justify-content-between col-12 col-md-12 col-lg-11 gap-5">
+          <div class="metode-pembayaran border p-4">
+            <h4 class="mb-4">Metode Pembayaran</h4>
+            <div class="pembayaran d-flex flex-column gap-4 pt-3">
+              <div>
+                <label class="form-check-label" for="transfer-bank">
+                  Transfer Bank
+                </label>
+                <input class="form-check-input" type="radio" name="radio-metode-pembayaran" id="transfer-bank" />
               </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div class="crd-title">
-                    <h1 class="fs-3">Free Course</h1>
-                  </div>
-                  <div class="crd-point">
-                    <p class="p-1 border border-primary text-primary">10.000 Point</p>
-                  </div>
-                </div>
-                <p class="fw-semibold text-secondary">1 kursus gratis, bebas memilih jenis kursus.</p>
-                <div class="crd-tukar d-flex justify-content-center rounded-pill">
-                  <a href="" class="text-center fw-semibold">Tukar</a>
-                </div>
+              <div>
+                <label class="form-check-label" for="ovo">
+                  OVO
+                </label>
+                <input class="form-check-input" type="radio" name="radio-metode-pembayaran" id="ovo" />
               </div>
-            </div>
-            <div class="card mx-2 my-2 crd-course">
-              <div class="crd-img">
-                <img src="../../assets/img/tukar-poin/sale.jpg" alt="..." />
+              <div>
+                <label class="form-check-label" for="dana">
+                  Dana
+                </label>
+                <input class="form-check-input" type="radio" name="radio-metode-pembayaran" id="dana" />
               </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div class="crd-title">
-                    <h1 class="fs-4">Diskon Khusus</h1>
-                  </div>
-                  <div class="crd-point">
-                    <p class="p-1 border border-primary text-primary">12.000 Point</p>
-                  </div>
-                </div>
-                <p class="fw-semibold text-secondary">Diskon besar khusus pengguna membership.</p>
-                <div class="crd-tukar d-flex justify-content-center rounded-pill">
-                  <a href="" class="text-center fw-semibold">Tukar</a>
-                </div>
+              <div>
+                <label class="form-check-label" for="shopeepay">
+                  Shopeepay
+                </label>
+                <input class="form-check-input" type="radio" name="radio-metode-pembayaran" id="shopeepay" />
               </div>
             </div>
-            <div class="card mx-2 my-2 crd-course">
-              <div class="crd-img">
-                <img src="../../assets/img/tukar-poin/baju.jpg" alt="..." />
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div class="crd-title">
-                    <h1 class="fs-4">Hadiah Barang</h1>
+          </div>
+
+          <div class="konfirmasi-pembayaran border p-3 col-12 col-md-6">
+            <div class="pembayaran-container p-2 mb-2 col-12" style="height: 300px;">
+              <h4>Konfirmasi Pembayaran</h4>
+              <div class="konfirmasi mt-4 col-12 col-md-10">
+                <form action="" class="">
+                  <div class="mb-3 pt-3">
+                    <label for="input-nama-pengguna" class="form-label">Nama Pengguna</label>
+                    <input type="text" class="form-control" id="input-nama-pengguna" placeholder="Nama Pengguna" />
                   </div>
-                  <div class="crd-point">
-                    <p class="p-1 border border-primary text-primary">15.000 Point</p>
+                  <div class="mb-3 pt-3 pb-3">
+                    <label for="input-jenis-pembelian" class="form-label">Jenis Pembelian</label>
+                    <input type="text" class="form-control" id="input-jenis-pembelian" placeholder="Jenis Pembelian" />
                   </div>
-                </div>
-                <p class="fw-semibold text-secondary">Pilih 1 buah (Kaos/Tumbler/Mug/Tas/Topi) .</p>
-                <div class="crd-tukar d-flex justify-content-center rounded-pill">
-                  <a href="" class="text-center fw-semibold">Tukar</a>
-                </div>
+                  <div class="button">
+                    <a href="../katalog-course/katalog-course.html" class="btn btn-warning btn text-white" type="submit">Bayar</a>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- main end -->
     </section>
-    <!-- tukar poin end -->
-
     <!-- footer start -->
     <footer class="text-light text-center py-3">
       <div class="container">
@@ -137,7 +147,7 @@
                 <a class="nav-link fw-medium" href="../course/course.html">Kursus</a>
               </li>
               <li class="nav-item my-4 mx-md-4 my-md-0">
-                <a class="nav-link fw-medium" href="../../index.html">FAQ</a>
+                <a class="nav-link fw-medium" href="#faq">FAQ</a>
               </li>
               <li class="nav-item my-4 mx-md-4 my-md-0">
                 <a class="nav-link fw-medium" href="../contact/contact.html">Kontak</a>

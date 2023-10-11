@@ -28,6 +28,10 @@ body {
 
 /*  diskusi */
 
+.add-topic span a {
+  text-decoration: none;
+}
+
 .title h1 {
   color: var(--secondary-gray-800);
 }
