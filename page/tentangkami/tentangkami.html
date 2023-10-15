@@ -4,57 +4,148 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- icon cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="tentangkami.css" />
+    <!-- css main -->
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
       <div class="container p-2">
         <div class="brand">
-          <a class="navbar-brand fs-2" href="../../index.html">Codestar</a>
+          <a class="navbar-brand fs-2" href="index-1.html">Codestar</a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse p-2" id="navbarNav">
           <ul class="navbar-nav m-auto">
             <li class="nav-item mx-2">
-              <a class="nav-link fw-medium" href="../course/course.html">Kursus</a>
+              <a class="nav-link fw-medium" href="page/course/course.html"
+                >Kursus</a
+              >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link fw-medium" href="../../index.html">Testimoni</a>
+              <a class="nav-link fw-medium" href="#testimoni">Testimoni</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link fw-medium" href="../../index.html">FAQ</a>
+              <a class="nav-link fw-medium" href="#faq">FAQ</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link fw-medium" href="../membership/membership.html">Membership</a>
+              <a
+                class="nav-link fw-medium"
+                href="page/membership/membership.html"
+                >Membership</a
+              >
             </li>
           </ul>
           <div class="navbar-user dropdown p-2">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Ridho Fauzi
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../user-profile/user-profile.html">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Another </a></li>
-              <li><a class="dropdown-item" href="#">Something</a></li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="page/user-profile/user-profile.html"
+                  >Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="/page/katalog-course/katalog-course.html"
+                  >Katalog Kursus
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/page/login/login.html"
+                  >Logout</a
+                >
+              </li>
             </ul>
+          </div>
+          <div class="icon mx-2" onclick="toggleNotification()">
+            <i
+              class="fa-solid fa-bell"
+              style="font-size: 24px; cursor: pointer"
+            ></i>
           </div>
         </div>
       </div>
     </nav>
     <!-- navbar end -->
 
+    <!-- notification start  -->
+    <div class="container">
+      <div class="notification-box" id="box">
+        <div class="d-flex justify-content-around align-items-center">
+          <h3 class="fw-bold mt-2 mx-3">Notifikasi</h3>
+          <span style="color: red">(2)</span>
+        </div>
+        <div class="notification-item d-flex mb-3">
+          <img
+            src="/assets/img/user-1.png"
+            alt="user-1"
+            class="img-fluid mx-3 mt-3"
+          />
+          <div class="text">
+            <h4 class="mt-3">Codestar</h4>
+            <p>Selamat anda berhasil menurkarkan Poin dengan kursus</p>
+          </div>
+        </div>
+        <div class="notification-item d-flex mb-3">
+          <img
+            src="/assets/img/user-1.png"
+            alt="user-1"
+            class="img-fluid mx-3 mt-3"
+          />
+          <div class="text">
+            <h4 class="mt-3">Codestar</h4>
+            <p>Selamat anda berhasil menurkarkan Poin dengan kursus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notification end -->
+
     <!-- background Tentang Kami Start -->
     <!-- Background image -->
-    <div class="bg-image" style="background-image: url('/assets/img/bg-about.png'); height: 32vh;">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 32vh;">
+    <div
+      class="bg-image"
+      style="background-image: url('/assets/img/bg-about.png'); height: 32vh"
+    >
+      <div
+        class="mask"
+        style="background-color: rgba(0, 0, 0, 0.6); height: 32vh"
+      >
         <div class="d-flex justify-content-center align-items-center">
-          <h1 class="text-white" style="margin: 4rem 0;">Tentang Kami</h1>
+          <h1 class="text-white" style="margin: 4rem 0">Tentang Kami</h1>
         </div>
       </div>
     </div>
@@ -70,16 +161,25 @@
               <h2>Tentang Platform Kami</h2>
               <div class="line mb-3"></div>
               <p>
-                Codestar adalah platform kursus online yang menawarkan berbagai pelatihan di bidang pengembangan perangkat lunak dan pemrograman. Dengan berkembangnya teknologi dan permintaan yang terus meningkat untuk profesional IT
+                Codestar adalah platform kursus online yang menawarkan berbagai
+                pelatihan di bidang pengembangan perangkat lunak dan
+                pemrograman. Dengan berkembangnya teknologi dan permintaan yang
+                terus meningkat untuk profesional IT
               </p>
               <p>
-                Platform ini menyediakan konten interaktif, termasuk proyek-proyek praktis, tugas, dan ujian, yang membantu Anda menerapkan konsep-konsep yang telah Anda pelajari
+                Platform ini menyediakan konten interaktif, termasuk
+                proyek-proyek praktis, tugas, dan ujian, yang membantu Anda
+                menerapkan konsep-konsep yang telah Anda pelajari
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-12 col-12">
             <div class="about-img">
-              <img src="/assets/img/bg-platform.png" alt="bg-platform" class="img-fluid" />
+              <img
+                src="/assets/img/bg-platform.png"
+                alt="bg-platform"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -110,10 +210,18 @@
                   <p class="text-warning">Project Manager</p>
                 </div>
                 <div class="socials text-center">
-                  <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#" class="text-black"> <i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-black">
+                    <i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -127,10 +235,18 @@
                   <p class="text-warning">Designer</p>
                 </div>
                 <div class="socials text-center">
-                  <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#" class="text-black"> <i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-black">
+                    <i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -144,10 +260,18 @@
                   <p class="text-warning">Designer</p>
                 </div>
                 <div class="socials text-center">
-                  <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#" class="text-black"> <i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-black">
+                    <i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -161,10 +285,18 @@
                   <p class="text-warning">Designer</p>
                 </div>
                 <div class="socials text-center">
-                  <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#" class="text-black"> <i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-black">
+                    <i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -178,10 +310,18 @@
                   <p class="text-warning">Coder</p>
                 </div>
                 <div class="socials text-center">
-                  <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#" class="text-black"> <i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-black">
+                    <i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -195,10 +335,18 @@
                   <p class="text-warning">Coder</p>
                 </div>
                 <div class="socials text-center">
-                  <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#" class="text-black"> <i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-black"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-black">
+                    <i class="fa-brands fa-github"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -215,18 +363,28 @@
       <div class="container">
         <div class="content p-2">
           <div class="footer-menu mb-2">
-            <ul class="d-flex p-2 justify-content-center flex-column flex-md-row border-bottom border-light">
+            <ul
+              class="d-flex p-2 justify-content-center flex-column flex-md-row border-bottom border-light"
+            >
               <li class="nav-item my-4 mx-md-4 my-md-0">
-                <a class="nav-link fw-medium" href="../tentangkami/tentangkami.html">Tentang Kami</a>
+                <a
+                  class="nav-link fw-medium"
+                  href="../tentangkami/tentangkami.html"
+                  >Tentang Kami</a
+                >
               </li>
               <li class="nav-item my-4 mx-md-4 my-md-0">
-                <a class="nav-link fw-medium" href="../course/course.html">Kursus</a>
+                <a class="nav-link fw-medium" href="../course/course.html"
+                  >Kursus</a
+                >
               </li>
               <li class="nav-item my-4 mx-md-4 my-md-0">
                 <a class="nav-link fw-medium" href="../../index.html">FAQ</a>
               </li>
               <li class="nav-item my-4 mx-md-4 my-md-0">
-                <a class="nav-link fw-medium" href="../contact/contact.html">Kontak</a>
+                <a class="nav-link fw-medium" href="../contact/contact.html"
+                  >Kontak</a
+                >
               </li>
             </ul>
           </div>
@@ -235,6 +393,12 @@
       </div>
     </footer>
     <!-- footer end -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
