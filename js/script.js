@@ -19,3 +19,17 @@ function lebarlayar() {
 
 window.onload = lebarlayar;
 window.onresize = lebarlayar;
+
+// ketika di submit form nya kita tangkap nilai dari form tersebut
+const formPesan = document.getElementById('form');
+
+formPesan.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const bodyDisk = document.querySelector('.body-disk');
+  const elemenNew = document.createElement('p');
+
+  elemenNew.innerText = document.getElementById('pesan').value;
+  bodyDisk.appendChild(elemenNew);
+  formPesan.reset();
+});

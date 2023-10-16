@@ -85,8 +85,9 @@
                 <h2 class="fs-6 text-light my-1">Topik Diskusi @Budisiregar</h2>
               </div>
               <div class="add-topic mb-2 d-flex justify-content-center align-items-center p-1 border bg-warning">
-                <span
-                  ><a href="../add-topik/add-topik.html" class="text-light my-1">Tambah Topik <span></span></a
+                <span class="text d-none d-lg-block"><a href="../add-topik/add-topik.html" class="text-light my-1">Tambah Topik</a></span>
+                <span class="plus d-block d-lg-none p-2"
+                  ><a href="../add-topik/add-topik.html" class="text-light my-1"><i class="fa-solid fa-plus"></i></a
                 ></span>
               </div>
             </div>
@@ -109,10 +110,10 @@
                 <button class="btn btn-warning ms-auto text-light">Balas</button>
               </div>
             </div>
-            <form action="">
+            <form action="" id="form">
               <div class="form-floating mb-2">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px;"></textarea>
-                <label class="text-dark-emphasis" for="floatingTextarea2">Tulis Balasan Anda...</label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="pesan" style="height: 200px;"></textarea>
+                <label class="text-dark-emphasis" for="pesan">Tulis Balasan Anda...</label>
               </div>
               <button class="btn btn-warning ms-auto text-light">Kirim Pesan</button>
             </form>
@@ -147,6 +148,8 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <script src="../../js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
