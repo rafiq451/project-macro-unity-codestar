@@ -9,7 +9,7 @@
 
 /* body */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* navbar */
@@ -82,6 +82,10 @@ body {
 
 .disk-topik {
   width: 85%;
+}
+
+.add-topic span a {
+  text-decoration: none;
 }
 
 /*  */
