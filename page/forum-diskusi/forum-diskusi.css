@@ -9,7 +9,7 @@
 
 /* body */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* navbar */
@@ -27,10 +27,6 @@ body {
 }
 
 /*  diskusi */
-
-.add-topic span a {
-  text-decoration: none;
-}
 
 .title h1 {
   color: var(--secondary-gray-800);
